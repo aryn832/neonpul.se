@@ -33,12 +33,14 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>-->
-		<h1>neon<span class="text-gradient">pul.se</span></h1>
+		<h1>neon<span class="text-gradient">pul.se</span></h1><br>
+    <p id="slogan">Home of the world's greatest hacker and the world's most powerful witch.</p>
     <div id="pulser">
       <img src="img/pulse.gif">
     </div>
     <div id="discord">
       <p>Discord: neonpulse_</p>
+      <p>Email: neon@neonpul.se</p>
     </div>
     <br>
 		<ul role="list" class="link-card-grid">
@@ -92,13 +94,16 @@ import Card from '../components/Card.astro';
 		height: auto;
 		z-index: -1;
 	}
-	h1 {
+	h1{
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
 	}
+  #slogan {
+    text-align:center;
+  }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
