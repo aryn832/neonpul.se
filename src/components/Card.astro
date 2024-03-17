@@ -5,13 +5,13 @@ interface Props {
 	href: string;
 }
 
-const { href, title, body, target = "_self" } = Astro.props;
+const { href, title, titleStrikethrough, body, target = "_self" } = Astro.props;
 ---
 
 <li class="link-card">
 	<a href={href} title={title} target={target}>
 		<h2>
-			{title}
+			<s>{titleStrikethrough}</s><br>{title}
 			<span>&rarr;</span>
 		</h2>
 		<p>
